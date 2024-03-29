@@ -1,56 +1,70 @@
 body{
     background-color: #eeeeee;
-    font-family: 'Rubik Mono One', monospace;
+    font-family: 'Lato', sans-serif;
     margin: 0 !important;
-    font-size: 16px;
-    cursor: pointer;
+    font-size: 20px;
+    cursor: pointer !important;
 }
 
 #container{
     width: 100%;
-    align: center;
 }
 
 #header{
     width: 100%;
-
+    padding-top: 20px;
 }
 
 #logo_img{
     float: left;
+    margin-left: 50px;
+
 }
 
 #logo_name{
     font-family: 'Rubik Mono One', monospace;
     font-size: 60px;
     padding-top: 45px;
+
 }
 
 
 #menu{
     width: 1000px;
-    padding-left: 58px;
-    padding-right: 58px;
     background-color: #eeeeee;
+    margin: auto;
+    font-family: 'Rubik Mono One', monospace;
+    margin-bottom: 20px;
 }   
 
-#menu_tile{
-    width: 280px;
-    /*background-color: #BBD5E4; */
+.menu_tile{
+    width: 300px;
     background: rgb(187,213,228);
-    background: linear-gradient(243deg, rgba(187,213,228,1) 0%, rgba(153,179,194,1) 100%);
+    background: linear-gradient(243deg, rgba(187,213,228,1) 0%, rgb(168, 199, 216) 100%);
     float:left;
-    padding: auto;
     text-align: center;
-    padding: 14px;
-    margin: 10px;
-    font-size: 11px;
+    
+    font-size: 12px;
     border-radius: 20px;
-    border: 2px #001736 solid;
+    margin: 10px;
+    
+	border: 2px #001736 solid;
+    
 
 }
 
-#menu_tile:hover{
+a.menuTile {
+	color: #000000;	
+	text-decoration: none;	
+    display: block;
+    width: 300px;
+    height: 14px;
+    padding: 14px 0;
+    
+}
+
+
+.menu_tile:hover{
     background: rgb(204,230,229);
     background: linear-gradient(243deg, rgba(204,230,229,1) 0%, rgba(170,196,211,1) 100%);
 	color: #222;
@@ -59,5 +73,128 @@ body{
 
 #content{
     width: 1000px;
-    align: center;
+    min-height: 500px;
+    margin: auto;
+    padding-top: 30px;
 }
+
+#footer{
+    width: 100%;
+    background: #001736;
+    color: #AAC4D3;
+    height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Rubik Mono One', monospace;
+    margin-top: 80px;
+}
+
+.tab{
+    margin-left: 30px;
+}
+
+.person img {
+    border-radius: 20px;
+    width: 180px;
+    height: 240px;
+    object-fit: cover;
+    float: left;
+    margin-right:30px;
+    margin-left: 40px;
+  }
+
+
+
+.description{
+    width: 850px;
+    height: 280px;
+    text-align: justify;
+    padding-top: 20px;
+
+    
+}
+
+.person{
+    width: 1000px;
+    height: 280px;
+    padding: 10px;
+    margin: auto;
+    
+}
+
+.QuestTile{
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(243deg, rgb(228, 238, 243) 0%, rgb(214, 232, 240) 100%);
+    margin: 20px 0;
+    text-align: center;
+    font-family: 'Rubik Mono One', monospace;
+    border: 2px #001736 solid;
+}
+
+
+a.tilelink{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    width: 1000px;
+    padding: 30px 0;
+}
+
+.UNI{
+    width: 100%;
+    background: linear-gradient(243deg, rgb(228, 238, 243) 0%, rgb(214, 232, 240) 100%);
+    /* height: 60px; */
+    margin: 20px 0;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+.UNI h2 {
+    font-family: 'Rubik Mono One', monospace;
+    font-size: 20px; 
+}
+
+a.UNIlink{
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+#result{
+    width: 100%;
+    border-radius: 20px;
+    background: linear-gradient(243deg, rgb(228, 238, 243) 0%, rgb(214, 232, 240) 100%);
+    margin: 20px;
+    text-align: center;
+    font-family: 'Rubik Mono One', monospace;
+    border: 2px #001736 solid;
+
+    
+}
+
+
+.expand-button {
+    border-radius: 20px;
+    background: linear-gradient(243deg, rgb(228, 238, 243) 0%, rgb(214, 232, 240) 100%);
+    padding: 20px;
+    text-align: center;
+    font-family: 'Rubik Mono One', monospace;
+    color: #001736;
+    border: 2px #001736 solid;
+    cursor: pointer;
+    width: 450px;
+    clear: both;
+    margin-bottom: 20px;
+  }
+
+.text-container {
+    display: none;
+  }
+
+.expanded {
+    display: block;
+  }
